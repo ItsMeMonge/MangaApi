@@ -19,8 +19,8 @@ app.post('/pesquisar', (req,res) => {
     var titulo = req.body.titulo
     console.log(titulo)
 
-    api.search(titulo).then((resSearch) => {
-        res.send(resSearch);
+    api.search(titulo).then((Response) => {
+        res.send(`${Response}`)
     });
 })
 
